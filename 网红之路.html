@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>网红之路</title>
 		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		
 		<script type="text/javascript">
 			function browserRedirect() {  
 					var sUserAgent = navigator.userAgent.toLowerCase();  
@@ -16,9 +17,9 @@
 					var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";  
 					var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
 					if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) { 
-						document.getElementsByTagName("div").style.width="100%";
+					document.write('<link rel="stylesheet" type="text/css" href="css/mobile.css"/>');
 					}else{
-						document.getElementsByTagName("div").style.width="30rem";
+					document.write('<link rel="stylesheet" type="text/css" href="css/pc.css"/>');
 					}
 					}
 					browserRedirect();  
