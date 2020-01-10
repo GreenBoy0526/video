@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>网红之路</title>
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#wuxing").click(function(){
+					$("video").attr("src","video/五行.mp4");
+				});
+				$("#jingong").click(function(){
+					$("video").attr("src","video/进宫.mp4");
+				});
+				$("#heitubaiyun").click(function(){
+					$("video").attr("src","video/黑土白云.mp4");
+				});
+				$("#gongzhubing").click(function(){
+					$("video").attr("src","video/公主病.mp4");
+				});
+				$("#gongzhubingzhongkou").click(function(){
+					$("video").attr("src","video/公主病（重口）.mp4");
+				});
+			});
+			
+		</script>
+		<style type="text/css">
+			body{
+				margin: 0rem;
+			}
+			h1{
+				margin: 0rem;
+				padding: 0.25rem;
+				color:aliceblue;
+				background: red;
+			}
+			div{
+				
+					width: 30rem;
+				margin:0.625rem auto;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>
+			网红之路
+		</h1>
+		<div id="video">
+			<video width="100%" height="" controls="controls" autoplay="autoplay">
+				<source src="video/五行.mp4" type="video/mp4"></source>
+			</video>
+		</div>
+		<div id="button">
+			<button type="button" id="wuxing">五行</button>
+			<button type="button" id="jingong" onclick="">进宫</button>
+			<button type="button" id="heitubaiyun">黑土白云</button>
+			<button type="button" id="gongzhubing">公主病</button>
+			<button type="button" id="gongzhubingzhongkou">公主病（重口）</button>
+		</div>
+	</body>
+</html>
