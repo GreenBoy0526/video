@@ -16,7 +16,9 @@
 					var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";  
 					var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
 					if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) { 
-					document.getElementsByTagName("div").style.width="100%";
+						document.getElementsByTagName("div").style.width="100%";
+					}else{
+						document.getElementsByTagName("div").style.width="30rem";
 					}
 					}
 					browserRedirect();  
@@ -52,8 +54,6 @@
 				background: red;
 			}
 			div{
-				
-					width: 30rem;
 				margin:0.625rem auto;
 			}
 		</style>
