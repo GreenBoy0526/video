@@ -1,4 +1,4 @@
-div{
+#box{
 	width: 80%;
 }
 button{
@@ -6,4 +6,14 @@ button{
 	height: 4rem;
 	font-size: 1rem;
 	margin-right: 0.625rem;
+	margin-bottom: 0.625rem;
+}
+#input{
+	width: 38rem;
+}
+input{
+	width: 36rem;
+}
+#a{
+	display: none;
 }

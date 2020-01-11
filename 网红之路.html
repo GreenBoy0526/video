@@ -4,26 +4,7 @@
 		<meta charset="utf-8">
 		<title>网红之路</title>
 		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-		
-		<script type="text/javascript">
-			function browserRedirect() {  
-					var sUserAgent = navigator.userAgent.toLowerCase();  
-					var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";  
-					var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";  
-					var bIsMidp = sUserAgent.match(/midp/i) == "midp";  
-					var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";  
-					var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";  
-					var bIsAndroid = sUserAgent.match(/android/i) == "android";  
-					var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";  
-					var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-					if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) { 
-					document.write('<link rel="stylesheet" type="text/css" href="css/mobile.css"/>');
-					}else{
-					document.write('<link rel="stylesheet" type="text/css" href="css/pc.css"/>');
-					}
-					}
-					browserRedirect();  
-		</script>
+		<script src="js/device.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function(){
 				$("#wuxing").click(function(){
@@ -42,26 +23,12 @@
 					$("video").attr("src","video/公主病（重口）.mp4");
 				});
 			});
-			
 		</script>
-		<style type="text/css">
-			body{
-				margin: 0rem;
-			}
-			h1{
-				margin: 0rem;
-				padding: 0.25rem;
-				color:aliceblue;
-				background: red;
-			}
-			div{
-				margin:0.625rem auto;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	</head>
 	<body>
 		<h1>
-			&emsp;网红之路
+			<a href="index.html">GreenBoy的视频小站</a>——网红之路
 		</h1>
 		<div id="video">
 			<video width="100%" height="" controls="controls" autoplay="autoplay">

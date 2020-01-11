@@ -1,3 +1,13 @@
 div{
 	width: 30rem;
 }
+button{
+	margin-right: 0.3125rem;
+	margin-bottom: 0.3125rem;
+}
+#input{
+	width: 20rem;
+}
+input{
+	width: 20rem;
+}
