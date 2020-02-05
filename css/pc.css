@@ -2,7 +2,7 @@ div{
 	width: 30rem;
 }
 button{
-	width: 3rem;
+	min-width: 3rem;
 	padding: 0rem;
 	margin-right: 0.3125rem;
 	margin-bottom: 0.3125rem;
