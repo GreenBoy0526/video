@@ -1,5 +1,6 @@
-#box{
+.box{
 	width: 80%;
+	text-align: center;
 }
 button{
 	width: 8rem;
