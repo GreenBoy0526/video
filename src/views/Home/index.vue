@@ -27,7 +27,7 @@ let menu = [
 ]
 function to(item: any) {
     if (item.name=='我的视频') {
-        // if (!canto()) return
+        if (!canto()) return
     }
     router.push(item.route)
 }
