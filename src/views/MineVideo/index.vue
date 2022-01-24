@@ -49,5 +49,5 @@ function play(item: any) {
     }
 }
 </script>
-<style lang="scss">
+<style lang="less">
 </style>

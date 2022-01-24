@@ -42,7 +42,7 @@ function canto() {
     }
 }
 </script>
-<style lang="scss">
+<style lang="less">
 .menu {
     margin-top: 200px;
     text-align: center;
