@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@types/node': ^17.0.10
   '@vitejs/plugin-vue': ^2.0.0
   ant-design-vue: ^2.2.8
   sass: ^1.49.0
@@ -12,6 +13,7 @@ specifiers:
   vue-tsc: ^0.29.8
 
 dependencies:
+  '@types/node': 17.0.10
   ant-design-vue: 2.2.8_vue@3.2.27
   vue: 3.2.27
   vue-router: 4.0.12_vue@3.2.27
@@ -138,6 +140,10 @@ packages:
 
   /@types/lodash/4.14.178:
     resolution: {integrity: sha512-0d5Wd09ItQWH1qFbEyQ7oTQ3GZrMfth5JkbN3EvTKLXcHLRDSXeLnlvlOn0wvxVIwK5o2M8JzP/OWz7T3NRsbw==, tarball: '@types/lodash/download/@types/lodash-4.14.178.tgz'}
+    dev: false
+
+  /@types/node/17.0.10:
+    resolution: {integrity: sha512-S/3xB4KzyFxYGCppyDt68yzBU9ysL88lSdIah4D6cptdcltc4NCPCAMc0+PCpg/lLIyC7IPvj2Z52OJWeIUkog==, tarball: '@types/node/download/@types/node-17.0.10.tgz'}
     dev: false
 
   /@types/throttle-debounce/2.1.0:
