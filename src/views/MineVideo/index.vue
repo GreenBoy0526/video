@@ -7,7 +7,7 @@
         <a-breadcrumb-item>网红之路</a-breadcrumb-item>
     </a-breadcrumb>
     <div class="box">
-        <video style="width: 30rem;height: 30rem" controls autoplay ref="video">
+        <video controls autoplay ref="video">
             <source :src="videosrc" type="video/mp4" />
         </video>
         <hr />
@@ -50,4 +50,10 @@ function play(item: any) {
 }
 </script>
 <style lang="less">
+@media screen and (max-width: 1000px) {
+    video{
+        width: 98vw;
+        height: 98vw;
+    }
+}
 </style>

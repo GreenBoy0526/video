@@ -8,7 +8,6 @@ declare module 'vue' {
     ABreadcrumbItem: typeof import('ant-design-vue/es')['BreadcrumbItem']
     AButton: typeof import('ant-design-vue/es')['Button']
     AInput: typeof import('ant-design-vue/es')['Input']
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
   }
 }
 

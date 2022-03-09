@@ -18,7 +18,7 @@
                 </p>
                 <img src="/img/公众号二维码.jpg" />
             </div>
-            <iframe :src="iframesrc" width="100%" height="400px" allowfullscreen="true" v-else></iframe>
+            <iframe :src="iframesrc" allowfullscreen="true" v-else></iframe>
         </div>
 
         <a-input v-model:value="value" placeholder="播放地址或影片名" />
@@ -42,17 +42,28 @@ let apis = [
 ]
 let showreadme = ref(true)
 let iframesrc = ref('')
-let value=ref('')
+let value = ref('')
 function play(item: any) {
-    showreadme.value=false
-    iframesrc.value = item.url+value.value
-    
+    showreadme.value = false
+    iframesrc.value = item.url + value.value
 }
 </script>
 <style lang="less">
-.box{
+.box {
     margin: 100px auto;
-	text-align: center;
-	width: 59rem; 
+    text-align: center;
+    width: 944px;
+    iframe {
+        width: 100%;
+        height: 400px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .box {
+        width: 98vw;
+        iframe {
+            height: 60vw;
+        }
+    }
 }
 </style>
