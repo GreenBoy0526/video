@@ -41,7 +41,7 @@ let videos = [
     },
 ]
 
-let videosrc = ref('video/五行.mp4')
+let videosrc = ref(videos[0].url)
 
 const video = ref<HTMLVideoElement | null>(null);
 function play(item: any) {
