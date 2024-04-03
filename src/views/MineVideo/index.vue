@@ -16,27 +16,28 @@
 </template>
 <script setup lang="ts">
 import { ref } from 'vue';
+const videoBaseUrl='https://cdn.jsdelivr.net/gh/GreenBoy0526/video/dist/'
 
 let videos = [
     {
         name: '五行',
-        url: "video/五行.mp4"
+        url:videoBaseUrl+ "video/五行.mp4"
     },
     {
         name: '进宫',
-        url: "video/进宫.mp4"
+        url: videoBaseUrl+"video/进宫.mp4"
     },
     {
         name: '黑土白云',
-        url: "video/黑土白云.mp4"
+        url: videoBaseUrl+"video/黑土白云.mp4"
     },
     {
         name: '公主病',
-        url: "video/公主病.mp4"
+        url:videoBaseUrl+ "video/公主病.mp4"
     },
     {
         name: '公主病（重口）',
-        url: "video/公主病（重口）.mp4"
+        url: videoBaseUrl+"video/公主病（重口）.mp4"
     },
 ]
 
