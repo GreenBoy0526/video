@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
 import { Menu, Affix, Input } from "antd";
 import { HomeOutlined, GithubOutlined } from "@ant-design/icons";
-import { useHistory,useLocation} from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 import qs from "qs";
 import isMobile from "../utils/isMobile";
 
 const { Search } = Input;
-
-
 
 let NavMenu = (props) => {
   let history = useHistory();
@@ -42,10 +40,7 @@ let NavMenu = (props) => {
             backgroundColor: "white",
           }}
         >
-          <a
-            href="http://greenboy0526.gitee.io/greenboyvideos"
-            style={{ color: "black" }}
-          >
+          <a href="http://liben.online/videos" style={{ color: "black" }}>
             <HomeOutlined />
           </a>
           <Search
@@ -54,10 +49,7 @@ let NavMenu = (props) => {
             onSearch={onSearch}
             style={{ width: "80%" }}
           />
-          <a
-            href="https://gitee.com/GreenBoy0526/GreenBoyVideos"
-            style={{ color: "black" }}
-          >
+          <a href="https://github.com/GreenBoy0526/video">
             <GithubOutlined />
           </a>
         </div>
@@ -68,9 +60,7 @@ let NavMenu = (props) => {
       {
         key: "home",
         icon: <HomeOutlined />,
-        label: (
-         <span onClick={()=>history.push('/')}>首页</span>
-        ),
+        label: <span onClick={() => history.push("/")}>首页</span>,
       },
       {
         key: "search",
@@ -87,11 +77,8 @@ let NavMenu = (props) => {
       {
         key: "git",
         label: (
-          <a href="https://gitee.com/GreenBoy0526/GreenBoyVideos">
-            <img
-              src="https://gitee.com/GreenBoy0526/GreenBoyVideos/badge/star.svg?theme=white"
-              alt="star"
-            ></img>
+          <a href="https://github.com/GreenBoy0526/video">
+            <GithubOutlined />
           </a>
         ),
       },
@@ -108,4 +95,4 @@ let NavMenu = (props) => {
     );
   }
 };
-export default NavMenu
+export default NavMenu;
