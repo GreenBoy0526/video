@@ -1,7 +1,7 @@
 import VideoPlayer from "../components/VideoPlayer";
 import isMobile from "../utils/isMobile";
 
-export default ({ source, url, index }) => {
+ const VideoPlayers=({ source, url, index }) => {
   let player;
   if (source == "fsm3u8" && url) {
     player = (
@@ -13,6 +13,7 @@ export default ({ source, url, index }) => {
   } else {
     player = (
       <iframe
+        title="video"
         src={url ? url.urls[index].url : ""}
         width={isMobile ? "300" : "1000"}
         height={isMobile ? "168.6" : "562"}
@@ -28,3 +29,4 @@ export default ({ source, url, index }) => {
     </div>
   );
 };
+export default VideoPlayers

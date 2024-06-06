@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { Button } from "antd";
 
-const videoBaseUrl = "https://cdn.jsdelivr.net/gh/GreenBoy0526/video/dist/";
+const videoBaseUrl = "https://cdn.jsdelivr.net/gh/GreenBoy0526/video/assets/";
 
 let videos = [
   {
@@ -28,7 +28,7 @@ let videos = [
 
 let videosrc = videos[0].url;
 
-export default () => {
+const PrivateVideo= () => {
   let videoRef = useRef(null);
   return (
     <div style={{textAlign:'center'}}>
@@ -52,3 +52,4 @@ export default () => {
     </div>
   );
 };
+export default PrivateVideo
