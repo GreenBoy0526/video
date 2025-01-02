@@ -41,17 +41,24 @@ class Play extends Component {
 
     return (
       <div style={{ margin: "2rem auto", width: "80%" }}>
-        <Breadcrumb>
-          <Breadcrumb.Item href="http://greenboy0526.gitee.io/greenboyvideos">
-            <HomeOutlined />
-          </Breadcrumb.Item>
-          <Breadcrumb.Item>
-            <Link to={"/s?wd=" + vod_name}>搜索：{vod_name}</Link>
-          </Breadcrumb.Item>
-          <Breadcrumb.Item>
-            <Link to={"/d?id=" + this.state.id}>{vod_name}</Link>
-          </Breadcrumb.Item>
-          <Breadcrumb.Item>{now_vod_name}</Breadcrumb.Item>
+        <Breadcrumb
+          items={[
+            {
+              title:<HomeOutlined />,
+              // eslint-disable-next-line no-restricted-globals
+              href:location.origin+location.pathname
+            },
+            {
+              title: <Link to={"/s?wd=" + vod_name}>搜索：{vod_name}</Link>,
+            },
+            {
+              title: <Link to={"/d?id=" + this.state.id}>{vod_name}</Link>,
+            },
+            {
+              title: now_vod_name,
+            },
+          ]}
+        >
         </Breadcrumb>
 
         <VideoPlayers source={source} url={url} index={index}></VideoPlayers>

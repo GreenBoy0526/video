@@ -8,7 +8,12 @@ const VideoPlayer = ({ height, width, src }) => {
 
   useEffect(() => {
     if (videoRef.current) {
-      player.current = Videojs(videoRef.current, {
+      let videoEl = document.createElement("video");
+      videoEl.className = "video-js";
+      videoEl.controls = true;
+      videoEl.preload = "auto";
+      videoRef.current.append(videoEl);
+      player.current = Videojs(videoEl, {
         height,
         width,
         bigPlayButton: true,
@@ -31,9 +36,7 @@ const VideoPlayer = ({ height, width, src }) => {
     player.current.play();
   }, [src]);
 
-  return (
-    <video ref={videoRef} className="video-js" controls preload="auto"></video>
-  );
+  return <div ref={videoRef}> </div>;
 };
 
 export default VideoPlayer;

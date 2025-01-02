@@ -1,8 +1,7 @@
 import axios from 'axios'
 
 const http = axios.create({
-	baseURL: '/api/feisuzyapi',
-	// baseURL: 'https://www.feisuzyapi.com/api.php/provide/vod',
+	baseURL: '/api/videosourceapi',
 	timeout: 1000 * 60,
 	withCredentials: false
 })

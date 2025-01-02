@@ -3,7 +3,7 @@ import isMobile from "../utils/isMobile";
 
  const VideoPlayers=({ source, url, index }) => {
   let player;
-  if (source == "fsm3u8" && url) {
+  if (source == "wjm3u8" && url) {
     player = (
       <VideoPlayer
         src={url ? url.urls[index].url : ""}
